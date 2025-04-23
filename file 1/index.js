@@ -69,10 +69,24 @@ document.getElementById("submit").onclick = function(){
 // type conversion = change the datatype of a value to another
 //                   (strings, numbers, booleans)
 
-let age = window.prompt("Qual sua idade?");
-age = Number(age); // converte para number
-age+=1; // =181 porem se usar age++; funciona
-console.log(age); // string
+// let age = window.prompt("Qual sua idade?");
+// age = Number(age); // converte para number
+// age+=1; // =181 porem se usar age++; funciona
+// console.log(age); // string
 
+
+// const = a variable that cant be changed
+
+let pi = 3.14; // number
+let radius;
+let circumference;
+
+document.getElementById("submit2").onclick = function(){
+    radius = document.getElementById("myText").value;
+    radius = Number(radius); // converte para number
+    circumference = 2 * pi * radius;
+    document.getElementById("h3").textContent = `The circumference is ${circumference}cm`;
+
+};
 
 
