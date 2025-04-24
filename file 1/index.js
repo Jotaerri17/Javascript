@@ -60,11 +60,10 @@ console.log(`This car for sale: ${forSale}`);
 // 1. Easy Way = window.prompt("Enter your name: ");
 // 2. Professsional Way = html textbox
 
-let username;
-document.getElementById("submit").onclick = function(){
-    username = document.getElementById("input1").value;
-    document.getElementById("h1").textContent = `Hello ${username}`;
-}
+//let username;
+//document.getElementById("submit").onclick = function(){
+//    username = document.getElementById("input1").value;
+//    document.getElementById("h1").textContent = `Hello ${username}`;}
 
 // type conversion = change the datatype of a value to another
 //                   (strings, numbers, booleans)
@@ -77,16 +76,32 @@ document.getElementById("submit").onclick = function(){
 
 // const = a variable that cant be changed
 
-let pi = 3.14; // number
-let radius;
-let circumference;
+//let pi = 3.14; // number
+//let radius;
+//let circumference;
 
-document.getElementById("submit2").onclick = function(){
-    radius = document.getElementById("myText").value;
-    radius = Number(radius); // converte para number
-    circumference = 2 * pi * radius;
-    document.getElementById("h3").textContent = `The circumference is ${circumference}cm`;
-
-};
+//document.getElementById("submit2").onclick = function(){
+//    radius = document.getElementById("myText").value;
+//    radius = Number(radius); // converte para number
+//   circumference = 2 * pi * radius;
+//    document.getElementById("h3").textContent = `The circumference is ${circumference}cm`;};
 
 
+const decreaseBtn = document.getElementById("decreaseBtn");
+const resetBtn = document.getElementById("resetBtn");
+const increaseBtn = document.getElementById("increaseBtn");
+const countlabel = document.getElementById("countlabel");
+let count = 0;
+
+increaseBtn.onclick = function(){
+    count++;
+    countlabel.textContent = count;
+}
+decreaseBtn.onclick = function(){
+    count--;
+    countlabel.textContent = count;
+}
+resetBtn.onclick = function(){
+    count = 0;
+    countlabel.textContent = count;
+}
