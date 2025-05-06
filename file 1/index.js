@@ -105,3 +105,31 @@ resetBtn.onclick = function(){
     count = 0;
     countlabel.textContent = count;
 }
+
+
+
+
+// math = built-in object that provides a collection of properties and methods for mathematical constants and functions
+
+let y = Math.PI; 
+let x = Math.E;
+let z;
+let a;
+let b;
+z = Math.round(x); // arredonda para o inteiro mais proximo
+a = Math.floor(y); // arredonda para baixo
+ b = Math.ceil(y); // arredonda para cima
+ z = Math.sqrt(16); // raiz quadrada
+z = Math.trunc(3.14); // arredonda para baixo
+z = Math.abs(-10); // valor absoluto
+a= Math.pow(2, 3); // potenciação // o segundo valor é a potencia
+b = Math.random(); // gera um numero aleatorio
+a = Math.sin(30); // seno
+a = Math.cos(30); // cosseno
+a = Math.tan(30); // tangente
+a = Math.log(10); // logaritmo natural
+z = Math.sign(-10); // retorna 1 se o numero for positivo, -1 se for negativo e 0 se for zero
+let max = Math.max(y,x); // retorna o maior valor
+let min = Math.min(y,x); // retorna o menor valor
+
+
