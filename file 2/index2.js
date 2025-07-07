@@ -37,23 +37,50 @@ mysubmit.onclick = function(){
 
 // .Checked = property that determines the checked satet of an HTML checkbox or radio button element
 
-const myCheckbox = document.getElementById("mycheckbox");
+const mycheckbox = document.getElementById("mycheckbox");
 const visaBtn = document.getElementById("visaBtn");
 const mastercardBtn = document.getElementById("mastercardBtn");
 const paypalBtn = document.getElementById("paypalBtn");
 const mysubmit2 = document.getElementById("mysubmit2");
-const subresult= document.getElementById("subresult");
+const subresult = document.getElementById("subresult");
 const paymentresult = document.getElementById("paymentresult");
 
-document.getElementById("mysubmitBtn").onclick = function() {
+mysubmit2.onclick = function(){
 
-    if(myCheckbox.checked) {
+    if(mycheckbox.checked) {
         subresult.textContent = 'You are subscribed.';
     }
     else {
         subresult.textContent = 'You are not subscribed.';
     }
-    
+    if(visaBtn.checked){
+        paymentresult.textContent = 'You have selected Visa.';
+    }
+    else if(mastercardBtn.checked){
+        paymentresult.textContent = 'You have selected Mastercard.';
+    }
+    else if(paypalBtn.checked){
+        paymentresult.textContent = 'You have selected PayPal.';
+    }
+    else {
+        paymentresult.textContent = 'No payment method selected.';
+    }
+
+
 }
+
+
+
+// ternrary operator = a shorcut to if{} and else{} statements helps to assing a variable based on a condition. condition ? CodeIfTrue; CodeIfFalse;
+
+let idade = 19;
+let message = age >= 18 ? 'Você é maior de idade.' : 'Você é menor de idade.';
+console.log(message);
+
+let preço = 133000;
+let desconto = preço > 120000 ? preço * 0.15 : 0;
+console.log(`O valor total é de R$${preço - desconto}.`);
+
+
 
 
