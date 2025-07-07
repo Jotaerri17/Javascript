@@ -16,12 +16,13 @@ mysubmit.onclick = function(){
     resultado.textContent = 'Você não pode dar entrada na sua CNH, pois já passou do limite de idade.';
 }
     else if(age >=18){
-        resultado.textContent = 'Você pode dar entrada na sua CNH.';
+
             if(CNH){
                 resultado.textContent = 'Você já possui CNH.';
             }
             else{
-                resultado.textContent = 'Você ainda não possui CNH.';
+                resultado.textContent = 'Você pode dar entrada na sua CNH.';
+                
             }
 }
     else if(age <= 0){
