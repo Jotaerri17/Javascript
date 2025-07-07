@@ -34,3 +34,26 @@ mysubmit.onclick = function(){
 
 }
 
+
+// .Checked = property that determines the checked satet of an HTML checkbox or radio button element
+
+const myCheckbox = document.getElementById("mycheckbox");
+const visaBtn = document.getElementById("visaBtn");
+const mastercardBtn = document.getElementById("mastercardBtn");
+const paypalBtn = document.getElementById("paypalBtn");
+const mysubmit2 = document.getElementById("mysubmit2");
+const subresult= document.getElementById("subresult");
+const paymentresult = document.getElementById("paymentresult");
+
+document.getElementById("mysubmitBtn").onclick = function() {
+
+    if(myCheckbox.checked) {
+        subresult.textContent = 'You are subscribed.';
+    }
+    else {
+        subresult.textContent = 'You are not subscribed.';
+    }
+    
+}
+
+
