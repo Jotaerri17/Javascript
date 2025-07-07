@@ -21,3 +21,19 @@
 .buttons:hover{
     background-color: hsl(215, 98%, 35%);
 }
+body{
+    font-family: Verdana;
+    text-align: center;
+}
+#mybutton{
+    font-size: 2.5em;
+    padding: 5px 25px;
+    border-radius: 5px;
+    margin-top: 100px;
+    background-color: hsl(215, 97%, 60%);
+    color: white
+}
+.mylabels{
+    font-size: 3em;
+    
+}

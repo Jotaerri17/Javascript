@@ -110,7 +110,7 @@ resetBtn.onclick = function(){
 
 
 // math = built-in object that provides a collection of properties and methods for mathematical constants and functions
-
+/*
 let y = Math.PI; 
 let x = Math.E;
 let z;
@@ -131,5 +131,34 @@ a = Math.log(10); // logaritmo natural
 z = Math.sign(-10); // retorna 1 se o numero for positivo, -1 se for negativo e 0 se for zero
 let max = Math.max(y,x); // retorna o maior valor
 let min = Math.min(y,x); // retorna o menor valor
+*/
+
+
+// Random Number Generator
+
+const mybutton = document.getElementById("mybutton");
+const mylabel1 = document.getElementById("mylabel1");
+const mylabel2 = document.getElementById("mylabel2");
+const mylabel3 = document.getElementById("mylabel3");
+const min = 1;
+const max = 10;
+let randomNum1;
+let randomNum2;
+let randomNum3;
+
+mybutton.onclick = function(){
+    randomNum1 = Math.floor( Math.random() * max ) + min; // gera um numero aleatorio entre min e max
+    randomNum2 = Math.floor( Math.random() * max ) + min;
+    randomNum3 = Math.floor( Math.random() * max ) + min;
+    mylabel1.textContent = randomNum1;
+    mylabel2.textContent = randomNum2;
+    mylabel3.textContent = randomNum3;
+}
+
+
+
+
+
+
 
 
