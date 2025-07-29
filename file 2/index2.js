@@ -114,7 +114,7 @@ console.log(`Your letter grade is ${letterGrade}.`);
 
 
 //  STRING METHODS = allow you to manipulate and work wiith text (strings)
-
+/*
 let username = "JohnDoe   ";
 console.log(username.toLowerCase()); // Converts to lowercase
 console.log(username.toUpperCase()); // Converts to uppercase
@@ -138,4 +138,16 @@ console.log(username.padStart(10, "0")); // Pads the start of the string with
 console.log(username.padEnd(10, "0")); // Pads the end of the string with "0"
 console.log(username.match(/[A-Z]/g)); // Finds all uppercase letters in the string
 console.log(username.match(/[a-z]/g)); // Finds all lowercase letters in the string
+console.log(username.slice(-1)); // Gets the last character of the string
+let firstName = username.slice(0, )
+console.log(firstName); // Gets the first name from the username if a space is present
+let lastName = username.slice(username.indexOf(" ") +1);
+
+
+const email = 'JoaoR@gmail.com';
+let usernameEmail = email.slice(0, email.indexOf('@'));
+console.log(usernameEmail); // Extracts the username from the email address
+let extensionEmail = email.slice(email.indexOf('@'));
+console.log(extensionEmail); // Extracts the domain from the email address
+*/
 
