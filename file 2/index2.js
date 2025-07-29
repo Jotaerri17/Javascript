@@ -151,3 +151,37 @@ let extensionEmail = email.slice(email.indexOf('@'));
 console.log(extensionEmail); // Extracts the domain from the email address
 */
 
+// Method Chaning = Calling one method after another in one continuous line of code
+
+// ----- Method chaining -----
+/*
+let username = window.prompt("Enter your username:");
+username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLowerCase();
+
+console.log(`Welcome ${username}`);
+*/
+
+
+// Logical Operators = used ot combine or manipulate boolean values (true or false)
+// AND (&&), OR (||), NOT (!)
+
+
+const temp = 20;
+
+if(temp > 0 && temp <=30){
+    console.log("O clima esta bom!.")
+}else if(temp > 30 && temp <= 40){
+    console.log("O clima esta quente!.")
+}
+else if(temp <0 || temp > 40){
+    console.log("O clima esta ruim!.")
+}
+
+const isSunny = true;
+
+if(!isSunny){
+    console.log("Está nublado.");
+}
+else {
+    console.log("Está ensolarado.");
+}
