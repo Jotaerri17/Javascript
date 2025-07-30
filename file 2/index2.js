@@ -165,7 +165,7 @@ console.log(`Welcome ${username}`);
 // Logical Operators = used ot combine or manipulate boolean values (true or false)
 // AND (&&), OR (||), NOT (!)
 
-
+/*
 const temp = 20;
 
 if(temp > 0 && temp <=30){
@@ -185,3 +185,5 @@ if(!isSunny){
 else {
     console.log("Está ensolarado.");
 }
+*/
+
